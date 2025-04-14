@@ -1,0 +1,172 @@
+$light_blue: #7f9eb2;
+$white_blue: #dae9f4;
+$grey_blue: #77919d;
+$dark_blue: #274c5e;
+$police: 'Raleway', sans-serif;
+
+#typing-text {
+    padding: 1.25rem;
+    margin: 1.25rem;
+    border-radius: 5%;
+    font-family: $police; 
+    background-color: rgb(113, 133, 189);
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0;  
+    animation: defilement 2s forwards;
+  }
+  
+  @keyframes defilement {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 100%; 
+    }
+  }
+
+.treasurehunt-section {
+    background-color: $light_blue;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    border-radius: 20px;
+}
+.title-projets {
+    display: grid;
+    font-family: $police;
+    font-size: 3.125rem;
+    font-weight: bold;
+    letter-spacing: 0.1875rem;
+    padding: 1.875rem;
+    justify-content: center;
+}
+
+#screen-th {
+    display: grid;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    grid-template-columns: 40% 60%; 
+    gap: 1.25rem; 
+}
+
+.screenshot {
+    width: 100%; 
+    border-radius: 10px;
+    border: 2px solid $white_blue; 
+}
+
+.text-screen {
+    font-family: $police;
+    background-color: $grey_blue;
+    border-radius: 10px;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    font-size: 1.25rem;
+    color: $dark_blue;
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+}
+
+.smartbike-section {
+    background-color: $dark_blue;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    border-radius: 20px;
+}
+
+#screen-sb {
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    grid-template-rows: 60% 40%; 
+    gap: 10px; 
+    background-color: $white_blue;
+    border-radius: 20px;
+    box-shadow: 0 0 10px $dark_blue;
+}
+
+.sb-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1.25rem;
+    margin: 1.25rem;
+}
+
+.screenshot-sb {    
+    width: 100%; 
+    border-radius: 10px;
+}
+
+.screensb-container {
+    gap: 1.25rem;
+    margin: 1.25rem;
+}
+
+.p-sbtext {
+    font-family: $police;
+    background-color: $grey_blue;
+    border-radius: 10px;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    font-size: 1.25rem;
+    color: $dark_blue;
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+}
+
+.text-sb {
+    font-family: $police;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    font-size: 1.25rem;
+    color: $dark_blue;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.video-title {
+    display: flex;
+    justify-content: center;
+    font-family: $police;
+    font-size: 3.125rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    font-weight: bold;
+}
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    background-color: $white_blue;
+    border-radius: 20px;
+}
+
+.video-text {
+    font-size: 1.5rem;
+    margin-bottom: 15px; 
+    font-family: $police;
+    color: $dark_blue;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 80%; 
+    max-width: 50rem; 
+    border: 5px solid $dark_blue; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px $dark_blue;
+    overflow: hidden; 
+}
+.video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

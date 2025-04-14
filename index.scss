@@ -1,0 +1,149 @@
+$light_blue: #7f9eb2;
+$white_blue: #dae9f4;
+$grey_blue: #77919d;
+$dark_blue: #274c5e;
+$police: 'Raleway', sans-serif;
+
+
+.main-container {
+    background-color: $light_blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.profile-image {
+    padding: 0.9375rem;
+    margin-top: 15.625rem;
+    border-radius: 50%;
+    width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $dark_blue;
+    box-shadow: 0 0 10px $dark_blue;
+    margin-left: 1.5625rem;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5625rem; 
+    gap: 1.25rem; 
+    padding: 0.9375rem; 
+
+}
+
+.bulle {
+    padding: 0.9375rem;
+    margin: 0.9375rem; 
+    margin-top: 3.75rem; 
+    aspect-ratio: 3 / 1;
+    background-color : $white_blue;
+    height: fit-content;
+    width: 50%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 25%;
+    font-family: $police;
+    transition: width 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
+    opacity: 0;  
+    animation: coteDroit 0.8s ease-out forwards;
+
+}
+
+.bulle:hover {
+    width: 60%;
+    transition: 0.5s;
+}
+
+svg {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.bulle-container {
+    margin-top: 1.25rem;
+    height: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 5%;
+    color: black;
+    font-size: 1.875rem;
+    transition: background-color 0.5s ease, width 0.5s ease, transform 0.5s ease;
+
+    }
+
+.bulle-container:hover {
+    background-color: $dark_blue;
+    width: 50%;
+    transition: 0.5s;
+}
+
+#nom {
+    font-family: $police;
+    font-size: 1.875rem; 
+    letter-spacing: 0.1875rem; 
+    padding: 0.9375rem; 
+    margin: 1.875rem; 
+    padding-left: 1.875rem; 
+}
+
+
+.mainabout-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
+    height: 70vh; 
+    opacity: 0.8;
+    background-color: $white_blue;
+    
+    }
+
+    @keyframes coteDroit {
+        0% {
+            transform: translateX(100%);  
+            opacity: 0;  
+        }
+        100% {
+            transform: translateX(0);  
+            opacity: 1;  
+        }
+    }
+
+.easter-egg {
+    background-color: $light_blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.easter-egg-image {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 5%;
+    margin: 1.25rem;
+    border-radius: 5px;
+}
+
+#myButton {
+    transition: transform 2s ease-in-out; 
+    cursor: pointer;  
+}
+
+#myButton.clicked {
+    animation: rotation 2s ease-in-out forwards; 
+    animation-delay: 5s;
+
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

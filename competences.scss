@@ -1,0 +1,69 @@
+$light_blue: #7f9eb2;
+$white_blue: #dae9f4;
+$grey_blue: #77919d;
+$dark_blue: #274c5e;
+$police: 'Raleway', sans-serif;
+
+.competences-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.competences-container {
+    background-color: $grey_blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    animation: fondu 1.5s ease-out; 
+}
+
+.skill {
+    background-color: $white_blue;
+    border-radius: 10px;
+    text-align: center;
+    width: 15rem;
+    padding: 4rem;
+    margin: 4rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    animation: defilement 1s forwards; 
+}
+
+.skill p {
+    font-family: $police;
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.skill:hover {
+    background-color: $light_blue;
+    transform: scale(1.1);
+}
+
+.skill svg {
+    height: 5rem;
+    width: 5rem;
+}
+
+@keyframes fondu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes defilement {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,172 @@
+$light_blue: #7f9eb2;
+$white_blue: #dae9f4;
+$grey_blue: #77919d;
+$dark_blue: #274c5e;
+$police: 'Raleway', sans-serif;
+
+.school-exemples {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    width: 100%;
+    justify-content: space-around;
+    background-color: $white_blue;
+}
+
+.school-container {
+    width: 50%;
+    padding: 0.8rem;
+    margin: 0.8rem;
+    position: relative;
+}
+
+.school-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+  
+  .hover-text {
+    position: absolute;
+    font-family: $police;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .school-container:hover .hover-text {
+    opacity: 1;
+    background-color: $light_blue;
+
+  }
+
+  .school-container:hover .school-img {
+    filter: blur(1px);
+  }
+
+  .dates-parcours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.25rem;
+    margin: 1.25rem;
+  }
+
+.dates-parcours p {
+    font-family: $police;
+    font-size: 2rem;
+    color: $dark_blue;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: $grey_blue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.parcours-title {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+    font-family: $police;
+    font-size: 3.125rem;
+    margin: 1.25rem;
+    font-weight: bold;
+}
+
+.parcours-container {
+    background-color: $white_blue;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    display: grid;
+    grid-template-rows: 20% 10% 70%;
+}
+
+.profession-container {
+    background-color: $grey_blue;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 10px;
+}
+.entreprise-container {
+  display: grid;
+  gap: 20px; 
+  grid-template-areas:
+    "microsoft"
+    "loxam"
+    "emmaus";
+  grid-template-rows: repeat(3, 200px); 
+}
+
+.microsoft-div {
+  grid-area: microsoft;
+  display: flex;
+  justify-content: center;
+}
+
+.loxam-div {
+  grid-area: loxam;
+  display: flex;
+  justify-content: center;
+}
+
+.emmaus-div {
+  grid-area: emmaus;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.entreprise-img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; 
+  }
+
+  .entreprise-container div {
+    position: relative;
+    overflow: hidden; 
+    padding: 15px;
+    margin: 15px;
+  }
+  
+  .entreprise-img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+  
+  .entreprise-container div:hover .entreprise-img {
+    filter: blur(2px) brightness(0.7);
+    transform: scale(1.02);
+  }
+  
+  .hover-text {
+    position: absolute;
+    font-family: $police;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: $light_blue; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+  
+  .entreprise-container div:hover .hover-text {
+    opacity: 1;
+  }

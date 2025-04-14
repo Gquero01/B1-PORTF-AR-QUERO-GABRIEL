@@ -1,0 +1,78 @@
+$light_blue: #7f9eb2;
+$white_blue: #dae9f4;
+$grey_blue: #77919d;
+$dark_blue: #274c5e;
+$police: 'Raleway', sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.logo-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+
+}
+
+
+header {
+    background-color: $dark_blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.125rem;
+    margin: 0.9375rem;
+
+  }
+
+  .nav-item-contact {
+    font-family: $police;
+    font-style: bold;
+    background-color: $grey_blue;
+    letter-spacing: 0.0625rem;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+  background-color: $dark_blue;
+  display: flex;
+  justify-content: center;    
+  font-family: $police;
+}
+
+.liens-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 3.125rem;
+  margin: 0.9375rem;
+}
+
+.mentions-legales {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3.125rem;
+  margin: 0.9375rem;
+}
